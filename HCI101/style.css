@@ -517,34 +517,52 @@ body.light-mode .skill-card li {
 /* Responsive */
 @media (max-width: 768px) {
     nav {
-        padding: 20px 30px;
+        padding: 15px 20px;
         flex-wrap: wrap;
+        gap: 10px;
     }
 
-    .nav-links {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        order: 3;
-        margin-top: 15px;
+    .logo {
+        order: 1;
+        flex: 0 0 auto;
     }
 
-    .nav-links a {
-        font-size: 11px;
+    .logo img {
+        height: 40px;
     }
 
     .theme-toggle {
         order: 2;
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        margin-left: auto;
+    }
+
+    .nav-links {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        order: 3;
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid rgba(255, 107, 0, 0.3);
+    }
+
+    .nav-links a {
+        font-size: 10px;
+        padding: 5px 8px;
     }
 
     section {
-        padding: 100px 30px 50px;
+        padding: 160px 20px 40px;
     }
 
     .home-container {
         flex-direction: column;
         gap: 30px;
+        padding-top: 20px;
     }
 
     .profile-picture {
@@ -557,20 +575,30 @@ body.light-mode .skill-card li {
     }
 
     .home-content h1 {
-        font-size: 36px;
+        font-size: 32px;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
     }
 
     .home-content p {
-        font-size: 16px;
+        font-size: 15px;
+        line-height: 1.6;
     }
 
     .section-title {
-        font-size: 36px;
+        font-size: 32px;
+        margin-bottom: 25px;
     }
 
     .info-grid,
     .skills-container {
         grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .info-card,
+    .skill-card {
+        padding: 18px;
     }
 
     .social-buttons {
@@ -581,5 +609,28 @@ body.light-mode .skill-card li {
         width: 45px;
         height: 45px;
         font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 180px 15px 30px;
+    }
+
+    .home-content h1 {
+        font-size: 28px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .profile-picture {
+        width: 220px;
+        height: 220px;
     }
 }
